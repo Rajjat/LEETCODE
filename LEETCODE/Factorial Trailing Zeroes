@@ -1,0 +1,36 @@
+package com.javacode.org;
+
+public class TrailingZeros {
+
+	public static void main(String[] args) {
+		        int n=50;
+		        int count=0;
+		        int i=1;
+		        int sum1=0;
+		        int sum2=0;
+		        while(true)
+		        {
+		            int m= (int) (n/(Math.pow(5,i)));
+		            System.out.println("M is ="+m);
+		            
+		            int p= (int) (n/(Math.pow(2, i)));
+		            System.out.println("p is ="+p);
+		            if(m!=0 && p!=0)
+		            {
+		                sum1=sum1+p;
+		                sum2=sum2+m;
+		            	count++;
+		                 i++;
+		            
+		            }
+		            else
+		            break;
+		           
+		        }
+		        if(sum1>=sum2)
+		   System.out.println("trailing zeros are ="+sum2);
+		        else
+		        	System.out.println("trailing zeros are ="+sum1);
+		}
+
+	}
