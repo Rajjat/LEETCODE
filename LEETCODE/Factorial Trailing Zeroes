@@ -11,10 +11,7 @@ public class TrailingZeros {
 		        while(true)
 		        {
 		            int m= (int) (n/(Math.pow(5,i)));
-		            System.out.println("M is ="+m);
-		            
 		            int p= (int) (n/(Math.pow(2, i)));
-		            System.out.println("p is ="+p);
 		            if(m!=0 && p!=0)
 		            {
 		                sum1=sum1+p;
