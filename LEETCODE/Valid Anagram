@@ -1,0 +1,31 @@
+package com.javacode.org;
+
+import java.util.Arrays;
+
+public class ValidAnagram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a="abcd";
+		String b="bcda";
+		int length=a.length();
+		int length1=b.length();
+		char[] arr1=a.toCharArray();
+		char[] arr2=b.toCharArray();
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        if(length!=length1)
+        {
+        	System.out.println("Two string are not anagrams");
+        }
+        boolean retval2=Arrays.equals(arr1, arr2);
+        if(retval2)
+        {
+        	System.out.println("Two string are anagrams");
+        }
+        else
+        	System.out.println("Two string are not ,,anagrams");
+        
+	}
+
+}
